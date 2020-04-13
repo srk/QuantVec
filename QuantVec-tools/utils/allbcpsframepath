@@ -9,13 +9,16 @@ while IFS= read -r line || [[ "$line" ]]
 do
    bcparray+=("$line")
 done < bcplist.txt
+# run framepath once with bogus arguments to create the nececessary config file framepath.cfg
+# which contains the full path to AIMAll
 framepath blah blah blah
-# dosomething with BCP list
+# run framepath with BCP list
 for i in "${bcparray[@]}"
 do
   label=`echo ${i} | tr ' ' '_'`
   framepath $1 ${i} $2 $3 $4 $5 $6 $7 $8 $9 | tee ${label}.out
 done
-
+# optionally, make a pathfiles.txt file for 'topviz'
+# ls -1 *.path > pathfiles.txt
 
 
