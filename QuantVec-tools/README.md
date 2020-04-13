@@ -1,5 +1,5 @@
 Essential Python modules (install these first):
-
+========================
 * beacon_utils - this contains a number of helper functions for mathematical operations and metadata generation
 * molgraph - The central module containing the molecular graph class used by most of the tools.
 
@@ -13,6 +13,11 @@ Tools
 *	sumviz2xyz 	- convert one (or more) .sumviz files to (multi-frame) .xyz format.
 *	topviz 	   - visualize molecular graphs and bond-path frameworks (based on [Mayavi](https://github.com/enthought/mayavi)).
 *	trajplot  - plot and filter eigenvector-space (U-space) trajectories (based on [matplotlib](https://matplotlib.org/)).
+
+Utilities
+=========
+* clean_molden_wf - (Bash) script to clean up .wfx files produced by [MOLDEN2Aim](https://github.com/zorkzou/Molden2AIM).
+* allbcpsframepath - (Bash) wrapper script around 'framepath': automates calculation of bond-path frameworks for every bond-path in a specified input molecular graph. Uses the same command line parameters as 'framepath', except that no specific BCP needs to be specified.
 
 Inputs
 ======
