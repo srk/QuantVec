@@ -1,0 +1,12 @@
+#!/bin/bash
+# convert to Unix line endings
+dos2unix $1
+# strip blank lines and extra whitespace
+sed -i 's/^ *//; s/ *$//; /^$/d; /^\s*$/d' $1
+# strip lines beginning with '#'
+sed -i -e 's/#.*$//' -e '/^$/d' $1
+# replace first 'UNKNOWN' with '0.0'
+sed -i -e '/UNKNOWN/{s//0.0/;:a' -e '$!N;$!ba' -e '}' $1
+# replace second 'UNKNOWN' with '2.0'
+sed -i -e '/UNKNOWN/{s//2.0/;:a' -e '$!N;$!ba' -e '}' $1
+
