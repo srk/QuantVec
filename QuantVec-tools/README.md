@@ -17,7 +17,7 @@ Tools
 Utilities
 =========
 * clean_molden_wf - (Bash) script to clean up .wfx files produced by [MOLDEN2Aim](https://github.com/zorkzou/Molden2AIM).
-* allbcpsframepath - (Bash) wrapper script around 'framepath': automates calculation of bond-path frameworks for every bond-path in a specified input molecular graph. Uses the same command line parameters as 'framepath', except that no specific BCP needs to be specified.
+* allbcpsframepath - (Bash) wrapper script around 'framepath': automates calculation of bond-path frameworks for every bond-path in a specified input molecular graph. Uses the same command line parameters as 'framepath', except that no BCP needs to be specified (they will all be discovered automatically).
 
 Inputs
 ======
