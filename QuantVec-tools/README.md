@@ -16,4 +16,4 @@ Tools
 
 Inputs
 ======
-At the moment, .sumviz files (molecular graphs) and .wfx (wavefunction) files produced by AIMAll or AIMPAC2 are required. MOLDEN-format files may be converted to .wfx using https://github.com/zorkzou/Molden2AIM from wavefunctions produced by many electronic structure codes. The result of the conversion may need some manual editing before AIMAll will accept them: the supplementary shell script 'clean_molden_wf' in the 'utils' subdirectory can be used to automate the necessary cleanup editing.
+At the moment, .sumviz files (molecular graphs) and .wfx (wavefunction) files produced by [AIMAll](https://aim.tkgristmill.com) or AIMPAC2 are required. MOLDEN-format files may be converted to .wfx using [MOLDEN2Aim](https://github.com/zorkzou/Molden2AIM) from wavefunctions produced by many electronic structure codes. The result of the conversion may need some manual editing before AIMAll will accept them: the supplementary shell script 'clean_molden_wf' in the 'utils' subdirectory can be used to automate the necessary cleanup editing.
