@@ -7,7 +7,7 @@ Tools
 =====
 *	cpscalar   - extract (NG)QTAIM scalar measures for one or more .sumviz files
 *	drproject  - construct eigenvector-space (U-space) trajectories from sequences of .sumviz files
-*	framepath  - for a given BCP in an input .sumviz file (with accompanying wavefunction .wfx), compute bond-path framework. Currently requires a working AIMAll installation.
+*	framepath  - for a given BCP in an input .sumviz file (with accompanying wavefunction .wfx), compute bond-path framework. Currently requires a working [AIMAll](https://aim.tkgristmill.com) installation.
 *	pathtool   - compute bond-path framework properties
 *	qtrama3    - calculate QTAIM-interpreted Ramachandran plots
 *	sumviz2xyz 	- convert one (or more) .sumviz files to (multi-frame) .xyz format
