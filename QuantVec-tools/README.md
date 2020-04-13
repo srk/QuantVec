@@ -11,7 +11,7 @@ Tools
 *	pathtool   - compute bond-path framework properties
 *	qtrama3    - calculate QTAIM-interpreted Ramachandran plots
 *	sumviz2xyz 	- convert one (or more) .sumviz files to (multi-frame) .xyz format
-*	topviz 	   - visualize molecular graphs and bond-path frameworks
+*	topviz 	   - visualize molecular graphs and bond-path frameworks (based on [Mayavi](https://github.com/enthought/mayavi)).
 *	trajplot  - plot and filter eigenvector-space (U-space) trajectories
 
 Inputs
