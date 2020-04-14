@@ -16,4 +16,4 @@ then
     pip3 install toolname-YYYYMMDD.N.tar.gz
 
 # Utilities
-A number of utility programs (mostly Bash scripts) may be found in the QuantVec-tools/utilities folder.
+A number of utility programs (mostly Bash scripts) may be found in the QuantVec-tools/utils folder.
