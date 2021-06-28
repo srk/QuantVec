@@ -9,7 +9,7 @@ Tools
 *	drproject  - construct eigenvector-space (U-space) trajectories from sequences of .sumviz files.
 *	framepath  - for a given BCP in an input .sumviz file (with accompanying wavefunction .wfx), compute bond-path framework. Currently requires a working [AIMAll](https://aim.tkgristmill.com) installation.
 *	pathtool   - compute bond-path framework properties.
-*	qtrama3    - calculate QTAIM-interpreted Ramachandran plots.
+*	qtrama3    - calculate QTAIM-interpreted Ramachandran plots (based on [matplotlib](https://matplotlib.org/)).
 *	sumviz2xyz 	- convert one (or more) .sumviz files to (multi-frame) .xyz format.
 *	topviz 	   - visualize molecular graphs and bond-path frameworks (based on [Mayavi](https://github.com/enthought/mayavi)).
 *	trajplot  - plot and filter eigenvector-space (U-space) trajectories (based on [matplotlib](https://matplotlib.org/)).
