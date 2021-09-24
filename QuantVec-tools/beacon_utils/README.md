@@ -7,6 +7,7 @@ BEACON Research Group, College of Chemistry and Chemical Engineering, Hunan Norm
 beacon_utils
 ============
 Library of useful functions for Python programs
+
 Currently contains:
 * dotprod    : dot product of two lists of numbers
 * modvec     : modulus of vector
