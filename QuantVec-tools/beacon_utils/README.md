@@ -1,5 +1,9 @@
+# beacon_utils
+
+
 Authors: Steven Kirk (stevenrkirk@gmail.com) and Samantha Jenkins (samanthajsuman@gmail.com)
 BEACON Research Group, College of Chemistry and Chemical Engineering, Hunan Normal University
+
 beacon_utils
 ============
 Library of useful functions for Python programs
