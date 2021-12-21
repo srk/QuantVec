@@ -1,0 +1,11 @@
+# trajplot example plotfile (controls data to be read, matplotlib rendering and filtering parameters)
+# lines starting with hash character are ignored 
+# datafile linecolour linestyle markersymbol markerfill markersize filterstring
+CW_trj_C2-C1.txt red - o full 5 avg+avg+avg
+CCW_trj_C2-C1.txt blue - o full 5 avg+avg+avg
+#CCW_trj_C1H3.txt blue - o full 5 avg+avg+avg
+#CCW_trj_C1H4.txt blue - o full 5 avg+avg+avg
+#CCW_trj_C1H5.txt blue - o full 5 avg+avg+avg
+#CCW_trj_C2Cl6.txt blue - o full 5 avg+avg+avg
+#CCW_trj_C2H7.txt blue - o full 5 avg+avg+avg
+#CCW_trj_C2H8.txt blue - o full 5 avg+avg+avg
