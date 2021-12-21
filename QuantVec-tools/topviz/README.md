@@ -11,3 +11,6 @@ For a simple display of a .sumviz molecular graph : topviz --input mysumvizfile.
 Eigenvector path data may be included using the --bondvectors option.
 
 ![Screenshot](topviz_example.png)
+
+Currently an example of a .sumviz files and .path files can be found in the 'example' subdirectory.
+
