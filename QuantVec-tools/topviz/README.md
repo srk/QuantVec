@@ -12,5 +12,5 @@ Eigenvector path data may be included using the --bondvectors option.
 
 ![Screenshot](topviz_example.png)
 
-Currently an example of a .sumviz files and .path files can be found in the 'example' subdirectory.
+Currently an example of a .sumviz file and .path files can be found in the 'example' subdirectory.
 
