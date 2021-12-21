@@ -1,4 +1,4 @@
-Interactive visualization GUI for molecular graphs and optional IAS paths (AIMAll .sumviz format) with optional associated paths in .path format from 'framepath' or the 'extreme' program from the AIMPAC2 Fortran package. This code can save rendered screenshots and 3-D models in X3D format.
+Interactive visualization GUI for molecular graphs and optional IAS paths (AIMAll .sumviz format) with optional associated paths in .path format from 'framepath' or the 'extreme' program from the AIMPAC2 Fortran package. This code can save rendered bitmap screenshots and 3-D models in X3D format.
 
 Depends on: Traits, TraitsUI, mayavi2, PyQT5, VTK.
 
