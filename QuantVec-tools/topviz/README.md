@@ -9,3 +9,5 @@ To see the full set of command line parameters: topviz --help
 For a simple display of a .sumviz molecular graph : topviz --input mysumvizfile.sumviz
 
 Eigenvector path data may be included using the --bondvectors option.
+
+![Screenshot](topviz_example.png)
