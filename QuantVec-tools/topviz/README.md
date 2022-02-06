@@ -16,7 +16,6 @@ Currently an example of a .sumviz file and .path files can be found in the 'exam
 
 TODO:
 
-* Sortable table of critical point properties in 'CPs' tab  - (working in dev version)
 * Sequences of molecular graphs with 'video-style' play/pause animation control (in progress)
 * Overlaid vector fields (e.g. current density) and scalar fields (e.g. isosurfaced or volume-rendered density)
 * Full load/save functionality for GUI menus (in progress)
