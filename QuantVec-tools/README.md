@@ -37,4 +37,4 @@ This simplifies generation of large numbers of G09 input files where all that di
 
 * xyzalign - syntax 'xyzalign input.xyz aligned.xyz N1 N2 N3'.  
 Given a molecular structure file 'input.xyz', produce a reoriented version 'aligned.xyz' preserving all internal bond lengths, angles etc. where atom number N1 has been placed at the origin of the coordinates system (0.0, 0.0, 0.0), atom number N2 is placed on the positive x-axis, and atom number N3 lies in the x-y plane. N1,N2,N3 are integers, the first atom being atom 1.  
-As this program can be used on multi-step .xyz input files, it can be to used to help clarify or better demonstrate intermolecular motions, with judicious choices of N1, N2 and N3. 
+As this program can be used on multi-step .xyz input files, it can be to used to help clarify or better demonstrate intramolecular motions, with judicious choices of N1, N2 and N3. 
