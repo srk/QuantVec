@@ -27,8 +27,14 @@ Additional utility packages
 ===========================
 These packages do not require the 'molgraph' or 'beacon_utils' Python modules.
 
-* irc_to_xyz - extract intermediate sets of molecular coordinates from a Gaussian G09 output (.log) file produced by 1) tracing down an Intrinsic Reaction Coordinate (IRC) path from a transition state, or 2) performing a constrained optimization with a parameter scan (e.g. a PES scan of a torsion angle). The output is in .xyz format. If the input comes from an IRC calculation, the values of the reaction cordinate are included in the comment line of each 'frame' of the output .xyz file. Such multi-step xyz files can be visualized and animated in a number of molecular visualization codes, e.g. Avogadro.
+* irc_to_xyz - extract intermediate sets of molecular coordinates from a Gaussian G09 output (.log) file produced by 1) tracing down an Intrinsic Reaction Coordinate (IRC) path from a transition state, or 2) performing a constrained optimization with a parameter scan (e.g. a PES scan of a torsion angle). The output is in .xyz format.  
+If the input comes from an IRC calculation, the values of the reaction cordinate are included in the comment line of each 'frame' of the output .xyz file. Such multi-step xyz files can be visualized and animated in a number of molecular visualization codes, e.g. Avogadro.
+
 * xyz_to_gjf - a very simple templating engine to generate G09 input files from a (possibly multi-step) .xyz file containing molecular geometries and a 
 standard 'template' G09 input file containing 'tags' like \<xyz> (the atomic coordinates are substituted here) and \<name> (the basename of the input file).
-Output files have numbered suffixes (e.g. \_0001.gjf, \_0002.gjf ...) corresponding to the step number in the input .xyz file. 
+Output files have numbered suffixes (e.g. \_0001.gjf, \_0002.gjf ...) corresponding to the step number in the input .xyz file.  
 This simplifies generation of large numbers of G09 input files where all that differs between each generated file is the atomic coordinates - the common elements of each file are specified *once*, in the template. This is particularly useful for , e.g. generating many 'single-point' converged wavefunction calculations corresponding to each geometry held in the 'frames' of a multi-step.xyz file. Such multi-step .xyz files can be associated with time-ordered sequences (i.e. dynamics) or other types of sequence (e.g. IRC or parameter scans).
+
+* xyzalign - syntax 'xyzalign input.xyz aligned.xyz N1 N2 N3'.  
+Given a molecular structure file 'input.xyz', produce a reoriented version 'aligned.xyz' preserving all internal bonds lengths, angles etc. where atom number N1 has been placed at the origin of the coordinates system (0.0, 0.0, 0.0), atom number N2 is placed on the positive x-axis, and atom number N3 lies in the x-y plane. N1,N2,N3 are integers, the first atom being atom 1.  
+As this program can be used on multi-step .xyz input files, it can be to used to help clarify or better demonstrate intermolecular motions, with judicious choices of N1, N2 and N3. 
