@@ -10,10 +10,16 @@ Number of Atoms (integer)
 Comment line (arbitrary string)
 
 
+
+
 followed by lines (one per atom) with the format:
 
 
+
+
 Atom_element_name X_coordinate Y_coordinate Z_coordinate
+
+
 
 
 If a text file containing names of .wfx files is used as input, the output .xyz file will contain one 'frame' of nuclear coordinate data for each
