@@ -4,7 +4,7 @@ an .xyz file containing the extracted molecular geometry (i.e. nuclear coordinat
 
 
 If a text file containing names of .wfx files is used as input, the output .xyz file will contain one 'frame' of nuclear coordinate data for each
-.wfx file, with the geometry data written in the same order as listed in the text file. The resulting 'multi-step'.xyz file may then be read by other tools or 
+.wfx file, with the geometry data written in the same order as listed in the text file. The resulting 'multi-step' .xyz file may then be read by other tools or 
 visualized/animated using, e.g. the Avogadro GUI program. 
 
 
