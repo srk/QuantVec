@@ -1,0 +1,13 @@
+%NoSave
+%mem=4GB
+%nprocshared=4
+%chk=<name>.chk
+#p b3lyp/6-311g(2d,3p) NoSymm int(grid=ultrafine) scf=(xqc,conver=10,maxcycle=999) Density=Current Output=WFX
+
+single point
+
+0 1
+<xyz>
+
+<name>.wfx
+
