@@ -1,7 +1,7 @@
 The 'screentraj' utility for examining the step-length profile of trajectories calculated using 'drproject3'. 
 
 
-Usage: screentraj <trajectory data file from drproject3>
+Usage: screentraj \<trajectory data file from drproject3\>
 
 
 This tool plots the magnitude of the 'dr' step at each point in the trajectory (y-axis), against the trajectory step number.
