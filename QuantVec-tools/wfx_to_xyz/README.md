@@ -1,5 +1,5 @@
 Reads a  .wfx file (nuclear coordinates in atomic units), or text file containing a list of names of .wfx files (one per line) and produces 
-an .xyz file containing the extracted molecular geometry (i.e. nuclear positions in Angstrom units), with the extracted total energy placed in the
+an .xyz file containing the extracted molecular geometry (i.e. nuclear coordinates in Angstrom units), with the extracted total energy placed in the
 .xyz file comment line.
 
 
