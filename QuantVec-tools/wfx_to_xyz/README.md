@@ -28,3 +28,4 @@ visualized/animated using, e.g. the Avogadro GUI program.
 
 
 Usage: wfx_to_xyz <inputfile/text_filelist> <output XYZ file name>
+
