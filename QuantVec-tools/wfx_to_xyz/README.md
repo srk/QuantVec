@@ -17,7 +17,7 @@ followed by lines (one per atom) with the format:
 
 
 
-Atom_element_name X_coordinate Y_coordinate Z_coordinate
+Atom_element_name  X_coordinate  Y_coordinate  Z_coordinate
 
 
 
