@@ -5,7 +5,7 @@ Tools and main codes will be migrated into this repository in stages, beginning 
 
 The research group pip repository (https://beaconresearch.org/pip/) is the older main home of many of the Python packages: this Github repository is currently being updated with the most recent research group versions as the migration proceeds. If you cannot find a package here, please look there, or contact stevenrkirk@gmail.com for the most recent packages. 
 
-# QuantVec tools
+# QuantVec tools (in directory 'quantvec-tools')
 Most QuantVec tools are implemented in Python 3 and are released as 'pip'-installable source distribution archives, following a calendar versioning scheme. Most of these Python-based tools also depend on the modules 'beacon_utils' and 'molgraph', so these must be installed prior to the tools themselves.
 
 The intended installation procedure is (using 'pip3' as a synonym for 'pip'):
