@@ -6,6 +6,7 @@ an .xyz file containing the extracted molecular geometry (i.e. nuclear coordinat
 A typical .xyz file consists of the following lines:
 
 Number of Atoms (integer)
+
 Comment line (arbitrary string)
 
 
