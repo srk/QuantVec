@@ -8,6 +8,8 @@ The research group pip repository (https://beaconresearch.org/pip/) is the older
 # QuantVec tools (in directory 'quantvec-tools')
 Most QuantVec tools are implemented in Python 3 and are released as 'pip'-installable source distribution archives, following a calendar versioning scheme. Most of these Python-based tools also depend on the modules 'beacon_utils' and 'molgraph', so these must be installed prior to the tools themselves.
 
+NOTE: it is *highly* recommended to install these packages, similarly to other scientific packages, into a dedicated Python virtual environment, in case of potential 'version clash' issues with dependencies.
+
 The intended installation procedure is (using 'pip3' as a synonym for 'pip'):
 
     pip3 install beacon_utils-YYYYMMDD.N.tar.gz
