@@ -29,6 +29,8 @@ Inputs
 ======
 At the moment, .sumviz files (molecular graphs) and .wfx (wavefunction) files produced by [AIMAll](https://aim.tkgristmill.com) or QuantVec are required. MOLDEN-format files may be converted to .wfx using [MOLDEN2Aim](https://github.com/zorkzou/Molden2AIM) from wavefunctions produced by many electronic structure codes. The result of the conversion may need some manual editing before AIMAll will accept them: the supplementary shell script 'clean_molden_wf' in the 'utils' subdirectory can be used to automate the necessary cleanup editing.
 
+Alternatively, gridded charge densities in Gaussian .cube format produced by [Octopus](https://octopus-code.org) and many other electronic structure codes may be used as inputs. These may then be processed by [CRITIC2](https://https://github.com/aoterodelaroza/critic2) to extract the critical points and bond paths. The CRITIC2 output (together with any accompanying CRITIC2 FLUX3D output file containing the bond paths) may then be converted into .sumviz format using 'critic2sumviz'. 
+
 
 Additional utility packages
 ===========================
