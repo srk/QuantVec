@@ -17,7 +17,7 @@ Tools
 *	trajplot  - plot and filter eigenvector-space (U-space) trajectories (based on [matplotlib](https://matplotlib.org/)).
 *	wfx_to_xyz - convert molecular geometry information in one or more .wfx files to a (single-frame/multi-frame) .xyz format molecular coordinate file
 *	sumviz2xyz - convert AIMAll/QuantVec .sumviz files containing molecular graph information to .xyz-format molecular coordinate files
-*	critic2sumviz - convert CRITIC2 output to .sumviz molecualr graph format
+*	critic2sumviz - convert CRITIC2 output to .sumviz molecular graph format
 
 
 Utilities
