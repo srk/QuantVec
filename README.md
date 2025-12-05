@@ -25,7 +25,7 @@ Usage examples may be found as README.md files in the individual subfolders.
 
 # Example files
 * Example files for ethane (using Gaussian G09 and the AIMAll (proprietary) QTAIM code): (https://github.com/srk/example_datasets_eigenvector_directed_ethane)
-* TODO: add more
+* Example files on Zenodo from WiRES paper (https://doi.org/10.1002/wcms.1611) <- TODO: put Zenodo DOI here
 
 # Utilities
 A number of utility programs (mostly Bash scripts) may be found in the QuantVec-tools/utils folder.
