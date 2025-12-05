@@ -50,10 +50,15 @@ options:
 ```
 `drproject3` performs projections onto critical point eigenvectors of nuclear or BCP positions shifts or arbitrary external field vectors (IN PROGRESS), given a sequence of .sumviz format molecular graph files, specified as a list of filenames in `filelist`.
 
-The program is intended to be interactive, however it can be scripted using commands piped into standard input.
+The program, presenting the user with text menus to choose options, is intended to be interactive, however it can be scripted using commands piped into standard input.
+
+Outputs
+=======
+The code outputs a (text) trajectory file with filename extension .traj for the selected critical point. The name of the file varies based on the options selected interactively. The trajectory file contains the eigenvector projections as columns in the file annd may then be further processed using the `trajplot` program.
 
 Examples of usage
 =================
+* `drproject3 sumviz_filelist.txt | tee drproject_out.txt`
 * An example of usage of the program, with .sumviz molecular graph files created for ethane (with Gaussian G09 and AIMAll): (https://github.com/srk/example_datasets_eigenvector_directed_ethane/tree/main/angleminus/singlepoints) and subdirectory `trajectory`.
 * [Example data set for NG-QTAIM eigenvector-following trajectories](https://DOI.org/10.5281/zenodo.7830375)
 * [Example_datasets:_eigenvector_directed_ethane](DOI.org/10.5281/zenodo.7830375)
