@@ -41,6 +41,11 @@ Input file format: each line has the format
 ```
 `trajplot` is run on the output files from `drproject`, specifically the trajectory files (with filename extension .traj). It applies optional filtering as specified for every trajectory data file listed in its input file , as described the program header above. It then produces:
 * an interactive 3-D graph GUI using 'Matplotlib' containing the U-space trajectories for each trajectory data file. Several of the command line flags allow this interactive view to be customized, and trajectory colors, markers etc. are specified in the input file. This interactive graph can also be entirely suppressed with the `--nograph` command line option, making the program scriptable.
-* A CSV-format file of the U-space projections for each input trajectory, to allow plotting and processing of trajectories using other graphiing software
+* A CSV-format file of the U-space projections for each input trajectory, to allow plotting and processing of trajectories using other graphing software
 * A summary at the end of the standard output containing the 'drmax' values for each trajectory, i.e. the sizes of the 'bounding box' of the trajectory in each U-space dimension. This information may be used within NG-QTAIM to calculate the F,C and A parameters (when calculated for both clockwise and counterclockwise circularly polarized laser pulses, for example).
 * IN PROGRESS: HTML+JavaScript output, with the Plotly graphics library, providing a single HTML file that can be easily distributed and loaded by Web browsers, to give an alternative web-based GUI.
+
+Example
+```
+trajplot plot.txt --matrix hessian --modulus no --title 'CW C1-C2' --autoscale | tee C1-C2_trajplot_ouput_drmax.txt
+```
