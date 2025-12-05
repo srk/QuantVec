@@ -20,7 +20,7 @@ options:
   --scaling SCALING  Optional scaling to apply to bondvectors ['ellipticity','none']
   --celllabels       Generate cell index labels on the atoms
 ```
-This program reads the output of the versatile CRITIC2 (https://github.com/aoterodelaroza/critic2) code, which can, among many other things, locate and evaluate critical points in fields produced by electronic structure codes, such as grids of electron density. It can also read the optional subsidiary output of CRITIC2 produced by the FLUXPRINT keyword within that program (and recorded in , which can contain detailed information on bond-paths.
+This program reads the output of the versatile CRITIC2 (https://github.com/aoterodelaroza/critic2) code, which can, among many other things, locate and evaluate critical points in fields produced by electronic structure codes, such as grids of electron density. It can also read the optional subsidiary output of CRITIC2 produced by the FLUXPRINT keyword within that program (and recorded in a file with suffix `_flux.txt`) , which can contain detailed information on bond-paths.
 
 It produces a .sumviz-format molecular graph file which contains both details of the critical points *and* the bond-paths, together with a .path-format file for every section of every bond-path between nuclear attractors. For an example a bond path, complete with its bond-critical point (BCP), between attractors A and B might, schematically, look like:
 
