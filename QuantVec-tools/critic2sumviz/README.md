@@ -28,4 +28,4 @@ It produces a .sumviz-format molecular graph file which contains both details of
 A----BCP-------B
 ```
 In this example, a separate .path file will be produced for each section (A----BCP and BCP------B) of the bond path. 
-The .path files may then be used for visualization purposes using the `topviz` GUI program, or analysed further using the `pathtool` program. The files contain not only sequences of position coordinates defining each path, but also (optionally) scaled e1 and e2 eigenvectors of the Hessian of the electronic charge density at every point along the path. These are used within NG-QTAIM to define *p*,*p'*,*q*,*q'* - paths associated with each bond-path.
+The .path files may then be used for visualization purposes using the `topviz` GUI program, or analysed further using the `pathtool` program. The files contain not only sequences of position coordinates defining each path, but also (optionally) scaled e<sub>1</sub> and e<sub>2</sub> eigenvectors of the Hessian of the electronic charge density at every point along the path. These are used within NG-QTAIM to define *p*,*p'*,*q*,*q'* - paths associated with each bond-path.
