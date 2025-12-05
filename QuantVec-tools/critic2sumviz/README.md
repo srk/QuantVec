@@ -66,7 +66,7 @@ K,L,metal,stiff,stress_stiff,stress_ellip,stress_ellip_hessrho,pol,stress_pol,bp
 (venv3) srk@THINKPAD:~/physics/molgraph/cpscalar$ 
 ```
 
-The `cpscalar` program may be applied to one or more molecular graphs in .sumviz format to extract per-CP properties. The main output is to standard output, but optionally an extra output file containing only the requested data in comma-separated text format may be created using the `--outfile` command line flag.
+The `cpscalar` program may be applied to one or more molecular graphs in .sumviz format to extract per-CP properties. The main output is to standard output, but optionally an extra output file containing only the requested data in ':'-separated text format may be created using the `--outfile` command line flag.
 
 The program can also be used as a filter (see the command line parameters `--filter`, `--filterprefix` and `--nminrho`).
 
