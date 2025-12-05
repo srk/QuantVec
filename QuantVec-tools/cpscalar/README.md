@@ -68,6 +68,8 @@ K,L,metal,stiff,stress_stiff,stress_ellip,stress_ellip_hessrho,pol,stress_pol,bp
 
 The `cpscalar` program may be applied to one or more molecular graphs in .sumviz format to extract per-CP properties. The main output is to standard output, but optionally an extra output file containing only the requested data in ':'-separated text format may be created using the `--outfile` command line flag.
 
+If the `atom_1_name` and `atom_2_name` parameters are respectively replaced by `all` and `bcp` (or `rcp`, `ccp` etc.), then the properties of *all* the critical points of that type present in the input file are reported.
+
 The program can also be used as a filter (see the command line parameters `--filter`, `--filterprefix` and `--minrho`).
 
 With a non-zero value of `--trackthresh` specified, the program will also perform tracking across sequences of molecular graphs to ensure that the identities of specific critical points are preserved throughout the sequence.
