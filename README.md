@@ -22,7 +22,7 @@ then
 The 'topviz' molecular graph visualization GUI in this suite is at https://github.com/srk/QuantVec/tree/master/QuantVec-tools/topviz
 
 # Example files
-* Example files for ethane (using Gaussian G09 and the AIMAll (proprietary) QTAIM code: (https://github.com/srk/example_datasets_eigenvector_directed_ethane)
+* Example files for ethane (using Gaussian G09 and the AIMAll (proprietary) QTAIM code): (https://github.com/srk/example_datasets_eigenvector_directed_ethane)
 * TODO: add more
 
 # Utilities
