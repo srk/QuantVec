@@ -72,6 +72,8 @@ The program can also be used as a filter (see the command line parameters `--fil
 
 With a non-zero value of `--trackthresh` specified, the program will also perform tracking across sequences of molecular graphs to ensure that the identities of specific critical points are preserved throughout the sequence.
 
+Additionally, some codes which produce .sumviz-format molecular graph files do not evaluate internuclear distances ('gbl') and bond-path lengths accurately: if `bcpcheck` is included in the list of requested values, this forces the recalculation of both of those quantities, replacing any pre-existing values read directly from the original .sumviz files themselves.
+
 Example:
 ```
 $ cpscalar naibp-h-em-zp-ssr-traj13-S1-0424.sumviz C3 N4 --outfile naibp_out.txt --vals ellip lap rho bpl metal
