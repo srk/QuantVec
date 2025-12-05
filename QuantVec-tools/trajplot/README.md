@@ -49,3 +49,4 @@ Example
 ```
 trajplot plot.txt --matrix hessian --modulus no --title 'CW C1-C2' --autoscale | tee C1-C2_trajplot_ouput_drmax.txt
 ```
+The `filterstring` specified in the input file, applied to reduce noise in the trajectory consists of either `none`, or one or more repetitions of the 'turn' filter or 'av' (2-point averaging) filter, applied successively and joined by the '+' character. For instance, the most commonly-used filter string, i.e. the standard Kolmogorov-Zurbenko data filter is equivalent to the filter string 'av+av+av', i.e. 3 averaging passes.
