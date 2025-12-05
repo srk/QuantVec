@@ -33,7 +33,7 @@ The .path files may then be used for visualization purposes using the `topviz` G
 Systems with periodic boundaries
 ================================
 If CRITIC2 is informed that the wavefunctions or gridded densities supplied to it are for a *crystal* (i.e. with periodic boundaries), then the crystal graph (analogous to the molecular graph) produced, by default, is for the irreducible cell - the keyword NOSYMM can be used to prevent this.  In this case, the `--celllabels` command-line parameter for `critic2sumviz` should be supplied. `critic2sumviz` then makes copies of any nuclei and critical points located on each corner, edge or face of the primitive cell. This also changes the output .sumviz file in two ways:
-1. It encodes the crystal cell parameter information in the text `Wfx Title` field of the .sumviz file, thus:
+1. It encodes the crystal cell parameter information (origin and a,b,c cell vectors) in the text `Wfx Title` field of the .sumviz file, thus:
 ```
 Wfx Title:  density.cube CRYSTAL {0.0,0.0,0.0} {5.6445,0.0,0.0} {0.0,5.6445,0.0} {0.0,0.0,5.6445}
 ```
