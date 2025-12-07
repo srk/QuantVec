@@ -40,3 +40,36 @@ Wfx Title:  density.cube CRYSTAL {0.0,0.0,0.0} {5.6445,0.0,0.0} {0.0,5.6445,0.0}
 for compatibility with other programs which read .sumviz files. For example, the `topviz` program will, by default, use this information to draw the boundaries of the unit cell.
 
 2. Each nucleus and nuclear attractor critical point, including all the generated periodic copies, created in the .sumviz file will have a 4-character code attached to its name, of the form '_ABC'. Each of the characters ABC in this cell label will either be '0' (associated with the original cell), 'p' ('plus 1') or 'm'('minus 1'). So for example, a nuclear critical point called **H1_0pm** will be the periodic copy of the H1 nucleus in the original cell (hence H1_000) which is shifted by a vector (0*a)+(1*b)+(-1*c), where a,b,and c are the cell lattice vectors. Consequently, BCP names (as they link two nuclear attractors) also expand. When the .sumviz file is visualized using `topviz`, the cell labels are suppressed by default. This helps to keep track of critical points on the cell edges and bondpaths which cross the boundaries of the unit cell.
+
+Worked example - benzene
+========================
+1. Decompress the benzene.cube.zip file to get the original gridded density data for a benzene molecule:
+   ```
+   unzip benzene.cube.zip
+   ```
+2. Generate a CRITIC2 input file (benzene.cri), to load the benzene.cube, discover critical points and write bond-path information:
+   ```
+   SYSTEM hostname
+   SYSTEM pwd
+   NOSYM
+   UNITS BOHR
+   MOLECULE CUBE benzene.cube
+   load benzene.cube smoothrho ZPSP H 1 C 4 I 7
+   auto seed ws seed pair NR 2 nucepsh 0.29 gradeps 1e-8
+   PRUNE_DISTANCE 0.01
+   FLUXPRINT
+    SHELLS 0
+    GRAPH 2
+    TEXT
+   END
+   ```
+3. Run CRITIC2, capturing the main output to `benzene.cro` and the corresponding bond-path data to `benzene_flux.txt`:
+   ```
+   critic2 benzene.cri | tee benzene.cro
+   ```
+4. Run `critic2sumviz` to make the .sumviz file, together with .path files containing ellipticity-scaled eigenvectors:
+   ```
+   critic2sumviz --scaling ellipticity benzene.cro
+   ```
+5. Process the `benzene.sumviz` file produced, or visualize with `topviz --input benzene.sumviz`.
+   
