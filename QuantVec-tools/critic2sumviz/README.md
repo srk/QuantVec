@@ -43,7 +43,7 @@ for compatibility with other programs which read .sumviz files. For example, the
 
 Worked example - benzene
 ========================
-1. Decompress the benzene.cube.zip file to get the original gridded density data for a benzene molecule:
+1. Decompress the benzene.cube.zip file to get the original gridded total charge density data for a benzene molecule:
    ```
    unzip benzene.cube.zip
    ```
