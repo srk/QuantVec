@@ -54,7 +54,7 @@ Worked example - benzene
    NOSYM
    UNITS BOHR
    MOLECULE CUBE benzene.cube
-   load benzene.cube smoothrho ZPSP H 1 C 4 I 7
+   load benzene.cube smoothrho ZPSP H 1 C 4
    auto seed ws seed pair NR 2 nucepsh 0.29 gradeps 1e-8
    PRUNE_DISTANCE 0.01
    FLUXPRINT
