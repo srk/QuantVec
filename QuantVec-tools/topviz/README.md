@@ -15,6 +15,12 @@ Eigenvector path data may be included using the --bondvectors option.
 
 ![Screenshot](topviz_example.png)
 
+Main view tab with molecular graph and sequence slider
+
+![Screenshot](topviz_example2.png)
+
+Sortable, filterable critical point properties table
+
 Currently an example of a .sumviz file and .path files can be found in the 'example' subdirectory.
 
 TODO:
