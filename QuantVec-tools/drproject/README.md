@@ -50,7 +50,14 @@ options:
 ```
 `drproject3` performs projections onto critical point eigenvectors of nuclear or BCP positions shifts or arbitrary external field vectors (IN PROGRESS), given a sequence of .sumviz format molecular graph files, specified as a list of filenames in `filelist`.
 
-The program, presenting the user with text menus to choose options, is intended to be interactive, however it can be scripted using commands piped into standard input.
+The program, presenting the user with text menus to choose options, is intended to be interactive, however it can be scripted using commands piped into standard input. The code allows the choice of:
+* **Coordinate origin** - molecular graph positions coordinates can be used 'as-is', adjusted to put the centre-of-mass on the coordinate origin, or re-oriented to put specific atoms on the origin or coordinate axes.
+* Name/type of critical points for evaluation.
+
+The 'frame' or timestep in the sequence which provides the projection vectors (e.g. Hessian(Rho) eigenvectors) can be specified. The standard choice is the *first* frame in a sequence, but optionally any frame in the sequence may be selected, including 'previous frame' (in so-called 'tracking' mode) or even 'the current frame' (in so-called 'live' mode). The latter feature is currently *incomplete*: it is intended for future use in situations where, in each frame, an alternate externally-defined vector quantity associated with a critical point may be projected against eigenvectors derived from the same critical point.
+
+A 'hybrid' mode of operation is also possible where the required vector (such as a critical point position shift) can be evaluated from one named critical point  or nuclear position, and projected against eigenvectors from a different critical point.
+ 
 
 Outputs
 =======
