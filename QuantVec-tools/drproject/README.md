@@ -61,7 +61,7 @@ A 'hybrid' mode of operation is also possible where the required vector (such as
 
 Outputs
 =======
-The code outputs a (text) trajectory file with filename extension .traj for the selected critical point. The name of the file varies based on the options selected interactively. The trajectory file contains the eigenvector projections as columns in the file annd may then be further processed using the `trajplot` program.
+The code outputs a (text) trajectory file with filename extension .traj for the selected critical point. The name of the file varies based on the options selected interactively. The trajectory file contains the eigenvector projections as columns in the file and may then be further processed using the `trajplot` program.
 
 Examples of usage
 =================
