@@ -69,3 +69,4 @@ Examples of usage
 * An example of usage of the program, with .sumviz molecular graph files created for ethane (with Gaussian G09 and AIMAll): (https://github.com/srk/example_datasets_eigenvector_directed_ethane/tree/main/angleminus/singlepoints) and subdirectory `trajectory`.
 * [Example data set for NG-QTAIM eigenvector-following trajectories](https://DOI.org/10.5281/zenodo.7830375)
 * [Example_datasets:_eigenvector_directed_ethane](DOI.org/10.5281/zenodo.7830375)
+* [Example datasets: sliding window trajectory for laser pulse on HCCI molecule](https://github.com/srk/example_datasets_timeseries_hcci/tree/main)
