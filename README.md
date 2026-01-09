@@ -20,6 +20,7 @@ then
     pip3 install toolname-YYYYMMDD.N.tar.gz
 
 The 'topviz' molecular graph visualization GUI in this suite is at https://github.com/srk/QuantVec/tree/master/QuantVec-tools/topviz.
+![Screenshot](topviz_example.png)
 
 Usage examples may be found as README.md files in the individual subfolders.
 
